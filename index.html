@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Emoji Mosaic Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🎨 Emoji Mosaic Studio</h1>
+
+    <div class="controls">
+      <input type="file" id="upload" accept="image/*">
+
+      <select id="mode">
+        <option value="emoji">Emoji Mode</option>
+        <option value="symbol">Symbol Mode</option>
+      </select>
+
+      <input type="text" id="customText" placeholder="Optional word for symbol mode">
+
+      <button onclick="convertImage()">Convert</button>
+      <button onclick="downloadImage()">Download</button>
+    </div>
+
+    <div class="output-wrapper">
+      <div id="output"></div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
